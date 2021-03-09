@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.body {
+  display: block;
+  margin: 0px;
+  background-color: #252a2e;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #252a2e;
+  text-align: center;
+}
+
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: aliceblue;
+}
+
+.movie-item {
+  flex-wrap: wrap;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #303539;;
+  width: 500px;
+  color: aliceblue;
+  text-shadow: 1px 1px 2px black;
+  transition: all .7s linear;
+}
+
+.movie-item :hover {
+  transform: scale(1.01);
+}
+
+.search {
+  margin: 20px;
+}
+
+.input {
+  margin: 20px;
+
+  padding: 18px 60px 18px 16px;
+    background: #303539;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #fff;
+    transition: .4s ease-in-out;
+    min-width: 340px;
+}
+
+.btn-form {
+  margin: 10px;
+  text-decoration: none;
+  background-color: #252a2e;
+  transition: all .7s linear;
+  border: none;
+  cursor: pointer;
+}
+
+.Search_svg__2NNl0:hover {
+  transform: scale(1.01);
+}
+
+.Search_svg__2NNl0 {
+    width: 30px;
+    height: 30px;
+    fill: #606365;
+    transition: all .4s;
+    background-color: #252a2e;
+}    
+
+.pageItem {
+  color: #fff;
 }
