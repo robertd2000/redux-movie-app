@@ -5,11 +5,42 @@
 }
 
 .App {
-  width: 100%;
+  min-width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #252a2e;
   text-align: center;
+}
+
+.header {
+  width: 100%;
+  background-color: #1b1e21;
+
+}
+
+.headerInner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 60%;
+  height: 45px;
+  padding: 15px;
+  align-items: center;
+}
+
+.nav {
+  flex-wrap: wrap;
+  width: 45%;
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  transition: all .7s linear;
+}
+
+.nav:hover {
+  color: #299ded;
 }
 
 .movies-list {
@@ -78,4 +109,18 @@
 
 .pageItem {
   color: #fff;
+}
+
+.saveBtn {
+  border: none;
+  cursor: pointer;
+  background-color: #299ded;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+}
+
+.active {
+  font-weight: bold;
+  color: #299ded;
 }

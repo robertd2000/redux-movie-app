@@ -1,5 +1,5 @@
 import { Service } from "../service/Service"
-import { GET_MOVIES, IS_LOADING, TOTAL_RESULTS } from "./types"
+import { GET_MOVIES, IS_LOADING, SAVE_MOVIE, TOTAL_RESULTS } from "./types"
 
 const setMovieList = movies => ({
     type: GET_MOVIES,
@@ -14,6 +14,11 @@ const isLoading = (val) => ({
 const totalResults = total => ({
     type: TOTAL_RESULTS,
     total
+})
+
+export const saveMovie = movie => ({
+    type: SAVE_MOVIE,
+    movie
 })
 
 export const getTotalResults = (movie) => dispatch => {

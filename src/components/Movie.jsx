@@ -1,4 +1,8 @@
+import { useDispatch } from "react-redux"
+import { saveMovie } from "../redux/actions"
+
 const Movie = ({data}) => {
+    const dispatch = useDispatch()
     return (
         <div className='movie-item'>
             <div>
@@ -10,6 +14,7 @@ const Movie = ({data}) => {
                     <h2>Название фильма: {data.Title}</h2>
                     <h4>{data.Type}</h4>
                     <h3>Год выхода: {data.Year}</h3>
+                    <button onClick={() => dispatch(saveMovie(data))} className='saveBtn' >Сохранить</button>
                 </div>
             </div>
         </div>

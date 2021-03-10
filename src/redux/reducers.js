@@ -1,7 +1,8 @@
-import { GET_MOVIES, IS_LOADING, TOTAL_RESULTS } from "./types";
+import { GET_MOVIES, IS_LOADING, SAVE_MOVIE, TOTAL_RESULTS } from "./types";
 
 const initialState = {
     movies: [],
+    savedMovies: [],
     isLoading: false,
     totalResults: null,
 }
@@ -27,6 +28,16 @@ export const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 totalResults: action.total
+            }
+        
+        case SAVE_MOVIE:
+            console.log(state);
+            return {
+                ...state,
+                savedMovies: [
+                    ...state.savedMovies,
+                    action.movie
+                ]
             }
     
         default:

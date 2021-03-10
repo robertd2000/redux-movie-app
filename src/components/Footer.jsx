@@ -1,10 +1,11 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { connect, useDispatch, useSelector } from "react-redux"
 import { getTotalResults } from "../redux/actions"
 import {getMovies} from '../redux/actions';
 
 const Footer = (props) => {
 
+    const [page, setPage] = useState(1)
     useEffect(() => {
         props.getTotalResults(props.movie)
     })
@@ -14,12 +15,16 @@ const Footer = (props) => {
       pages.push(i)
     }
 
+    const update = id => {
+        return setPage(id)
+    }
+
     const changePage = (id, movie) => {
-        console.log(id, movie);
+        update(id)
         props.getMovies(movie, id)
     }
 
-    let pagesItem = pages.map(p => <span onClick={() => changePage(p, props.movie)} key={p} className='pageItem'> {p} </span>)
+    let pagesItem = pages.map(p => <span className={p == page ? 'pageItem active' : 'pageItem'} onClick={() => changePage(p, props.movie)} key={p}> {p} </span>)
     
     return (
         <div>

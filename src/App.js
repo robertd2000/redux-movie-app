@@ -1,6 +1,8 @@
+import { Route } from 'react-router';
 import './App.css';
+import { Header } from './components/Header';
 import MovieList from './components/MovieList';
-import { Search } from './components/Serach';
+import { SavedMovies } from './components/SavedMovies';
 
 
 
@@ -8,8 +10,9 @@ function App(props) {
 
   return (
     <div className="App">
-      <Search />
-      <MovieList />
+      <Header />
+      <Route path='/' exact component={MovieList} />
+      <Route path='/savedMovies' exact component={SavedMovies} />
     </div>
   );
 }
