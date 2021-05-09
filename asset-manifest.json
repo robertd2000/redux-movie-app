@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/redux-movie-app/static/css/main.7665190e.chunk.css",
+    "main.js": "/redux-movie-app/static/js/main.d3491776.chunk.js",
+    "main.js.map": "/redux-movie-app/static/js/main.d3491776.chunk.js.map",
+    "runtime-main.js": "/redux-movie-app/static/js/runtime-main.1cf68c66.js",
+    "runtime-main.js.map": "/redux-movie-app/static/js/runtime-main.1cf68c66.js.map",
+    "static/js/2.f932f320.chunk.js": "/redux-movie-app/static/js/2.f932f320.chunk.js",
+    "static/js/2.f932f320.chunk.js.map": "/redux-movie-app/static/js/2.f932f320.chunk.js.map",
+    "static/js/3.9ca88482.chunk.js": "/redux-movie-app/static/js/3.9ca88482.chunk.js",
+    "static/js/3.9ca88482.chunk.js.map": "/redux-movie-app/static/js/3.9ca88482.chunk.js.map",
+    "index.html": "/redux-movie-app/index.html",
+    "static/css/main.7665190e.chunk.css.map": "/redux-movie-app/static/css/main.7665190e.chunk.css.map",
+    "static/js/2.f932f320.chunk.js.LICENSE.txt": "/redux-movie-app/static/js/2.f932f320.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1cf68c66.js",
+    "static/js/2.f932f320.chunk.js",
+    "static/css/main.7665190e.chunk.css",
+    "static/js/main.d3491776.chunk.js"
+  ]
+}
